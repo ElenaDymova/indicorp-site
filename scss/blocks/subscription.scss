@@ -1,0 +1,133 @@
+.subscription {
+  background-color: $special-color;
+  color: $basic-white;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-grey;
+    padding-top: 17px;
+    margin-bottom: 21px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 84px;
+      width: 100%;
+      height: 77px;
+      background-color: $title-color;
+    }
+  }
+}
+
+.subscription__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $special-color;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 32px 0 32px;
+    padding: 30px 0 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.subscription__title {
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: auto;
+    padding: 0;
+    margin-left: 50px;
+    padding-right: 90px;
+  }
+}
+
+.subscription__column {
+  padding: 30px 0 30px 0;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 30px 100px 30px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 0;
+    margin-right: 48px;
+  }
+}
+
+.subscription__input {
+  padding: 15px 0px 15px 20px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 311px;
+  }
+}
+
+.subscription__input {
+  font-weight: 400;
+
+  &:focus {
+    border: 2px solid $text-color;
+  }
+}
+
+.subscription__button {
+  min-width: 117px;
+  padding: 15px 25px;
+  border: 1px solid $basic-white;
+  border-radius: 0 5px 5px 0;
+  background-color: $button-color;
+  line-height: 28px;
+  color: $basic-white;
+
+  &:hover,
+  &:focus {
+    background-color: $button-color-hover;
+  }
+
+  &:active {
+    background-color: $button-color-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 22px;
+    width: 20%;
+  }
+}
+
+.subscription__background {
+  background-color: $title-color;
+  width: 100%;
+  height: 77px;
+  margin-top: -55px;
+  z-index: 1;
+}

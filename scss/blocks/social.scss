@@ -1,0 +1,57 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0px 55px 44px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 50%;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+  }
+}
+
+.social__icon {
+  padding-right: 20px;
+}
+
+.social__icon--facebook:hover path,
+.social__icon--facebook:focus path {
+  fill: #0c36db;
+}
+
+.social__icon--facebook:active path {
+  fill: #061e7c;
+}
+
+.social__icon--instagram:hover path,
+.social__icon--instagram:focus path {
+  fill: #be1649;
+}
+
+.social__icon--instagram:active path {
+  fill: #E51F5A;
+}
+
+.social__icon--twitter:hover path,
+.social__icon--twitter:focus path {
+  fill: #1583b3;
+}
+
+.social__icon--twitter:active path {
+  fill: #0b6085;
+}
+
+.social__icon--youtube:hover path,
+.social__icon--youtube:focus path {
+  fill: #b12304;
+}
+
+.social__icon--youtube:active path {
+  fill: #E42F08;
+}

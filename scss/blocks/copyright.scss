@@ -1,0 +1,20 @@
+.copyright {
+  @media (min-width: $tablet-width) {
+		width: 50%;
+	}
+}
+
+.copyright__text {
+  margin: 0 auto;
+  padding: 28px 0px 0px 47px;
+  text-align:left;
+
+  @media (min-width: $tablet-width) {
+		padding-left: 40px;
+    padding-top: 0;
+	}
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0px;
+  }
+}
